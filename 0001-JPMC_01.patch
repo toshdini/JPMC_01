@@ -1,0 +1,223 @@
+From 65e7d5e2c5562b02154d456d534e9fefaf40b241 Mon Sep 17 00:00:00 2001
+From: toshdini <toahdini.1999@gmail.com>
+Date: Sat, 13 Mar 2021 10:39:07 -0800
+Subject: [PATCH] 'JPMC_01'
+
+---
+ .idea/.gitignore                              |   8 ++++
+ .idea/JPMC-tech-task-1-py3.iml                |   8 ++++
+ .../inspectionProfiles/profiles_settings.xml  |   6 +++
+ .idea/misc.xml                                |   4 ++
+ .idea/modules.xml                             |   8 ++++
+ .idea/vcs.xml                                 |   6 +++
+ __pycache__/client3.cpython-38.pyc            | Bin 0 -> 1116 bytes
+ client3.py                                    |  12 ++++--
+ client_test.py                                |  39 +++++++++++-------
+ 9 files changed, 72 insertions(+), 19 deletions(-)
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/JPMC-tech-task-1-py3.iml
+ create mode 100644 .idea/inspectionProfiles/profiles_settings.xml
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 __pycache__/client3.cpython-38.pyc
+
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+index 0000000..72967c1
+--- /dev/null
++++ b/.idea/.gitignore
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Datasource local storage ignored files
++/../../../../../../../../:\Users\Toshdini\OneDrive\JP Morgan project\Task1_Interface with a stock price data feed\JPMC-tech-task-1-py3\.idea/dataSources/
++/dataSources.local.xml
++# Editor-based HTTP Client requests
++/httpRequests/
+diff --git a/.idea/JPMC-tech-task-1-py3.iml b/.idea/JPMC-tech-task-1-py3.iml
+new file mode 100644
+index 0000000..d0876a7
+--- /dev/null
++++ b/.idea/JPMC-tech-task-1-py3.iml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+index 0000000..105ce2d
+--- /dev/null
++++ b/.idea/inspectionProfiles/profiles_settings.xml
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+index 0000000..d1e22ec
+--- /dev/null
++++ b/.idea/misc.xml
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+index 0000000..c2eb5cf
+--- /dev/null
++++ b/.idea/modules.xml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/JPMC-tech-task-1-py3.iml" filepath="$PROJECT_DIR$/.idea/JPMC-tech-task-1-py3.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+index 0000000..94a25f7
+--- /dev/null
++++ b/.idea/vcs.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/__pycache__/client3.cpython-38.pyc b/__pycache__/client3.cpython-38.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..fbd0ef57f46692a0046951a909672b3efd0b618c
+GIT binary patch
+literal 1116
+zcmYjQ&2Jnv6t`zQJG1#Bv`s=J4hE^BE0LyEFVTuGDM1L-hO{&XtVP3Q{5Ctu?092)
+zi?VD^%OA2ia^=9kg5)cwp5eraXKxbKBfl>{KmXpx9Ivh}5nO-$^Ze(-HX(m|<=urg
+z@)d6LClW~{t%;z4M<NP57IENAFd2zN#-b&eOnxIGl`WYf&!8={^GN>zORx;B8J*Ds
+z@{<%R5YJbEo~_N_gJixAY|gI9HNB?u_dOT);2!!t689m6`!m{O;(^!@n_>$-kZpJX
+z8?XsmeYQzvl#&aJ)+NYb3$|v_jqSOlKakGyTf|NdCm#*09d&niYgHEYKpETJd$RXr
+z_hJnC^2<to{_9osFD0bJeYX;n818-CW)H~}Yp_kOsP$5`O=P@{?_WhhXLou$jjq^~
+zPNQi&WqpPyl1Y~zX(h)c@S?7{>T^2)-T+9D{7q4h!EmeiDKwx9i%wh?wiv0ZvD_ub
+zs`A{WR*mwLO1fmEs}dG^Va_|$CH-0zwv)KzVyrCa2*J8G`sNGQHo7fD?GyT)Xy5t&
+zF88~=V*}dsUMn+@Ra5o8Z{R>zZ=m<x5r3idY0>bJR%cM!-fIl<H2=22`27MC`K7W0
+z1RB7h6G950c^|XF>o4|qER=&Ci`RCZ?u;&<^~$<}#y)#Ix^ye2U=J|GqmUwkF<}<t
+zjIQIys9r%^>GQZ<UiRGy-SAn2{zj9J`8QxWR;^OLt^r71@S>47@(F+I?}d~*kw|Ym
+zZiSO@uprCm=Q4!$%7^QqW&#AJ*TPAj4~weF^T{VKeVrwLXn0}yBdm1yq4|_!s)2_m
+zQ0h#w5DEP{+hT33>$*C5tO3W)SkYSOj@fDmf}I)FxRyrXYABMI$6vqt(b2<Dh`Z;T
+zVhDNeScOe+3HqLbqq$44{nCi^HgbxQ)d(<LU+H0C9n(-q*9y~Nbn46D6VsU|{yz_M
+t5hkm#?-ay0MK7xI*%0TqhA%eIWIjZa(eTAAW>MD8(kx!5JT!1K`X4qYB)<Rv
+
+literal 0
+HcmV?d00001
+
+diff --git a/client3.py b/client3.py
+index f1771c3..273b490 100644
+--- a/client3.py
++++ b/client3.py
+@@ -35,25 +35,29 @@ def getDataPoint(quote):
+ 	stock = quote['stock']
+ 	bid_price = float(quote['top_bid']['price'])
+ 	ask_price = float(quote['top_ask']['price'])
+-	price = bid_price
++	price = (bid_price+ask_price)/2
+ 	return stock, bid_price, ask_price, price
+ 
+ def getRatio(price_a, price_b):
+ 	""" Get ratio of price_a and price_b """
+ 	""" ------------- Update this function ------------- """
+ 	""" Also create some unit tests for this function in client_test.py """
+-	return 1
++	if (price_b == 0):
++		return
++	return price_a/price_b
+ 
+ # Main
+ if __name__ == "__main__":
+ 
+ 	# Query the price once every N seconds.
+-	for _ in iter(range(N)):
++	for _ in range(N):
+ 		quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
+ 
+ 		""" ----------- Update to get the ratio --------------- """
++		prices = {}
+ 		for quote in quotes:
+ 			stock, bid_price, ask_price, price = getDataPoint(quote)
++			prices[stock] = price
+ 			print ("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
+ 
+-		print ("Ratio %s" % getRatio(price, price))
++		print ("Ratio %s" % (getRatio(prices['ABC'], prices['DEF'])))
+diff --git a/client_test.py b/client_test.py
+index af2bf26..e96e471 100644
+--- a/client_test.py
++++ b/client_test.py
+@@ -1,24 +1,33 @@
+ import unittest
+ from client3 import getDataPoint
+ 
+-class ClientTest(unittest.TestCase):
+-  def test_getDataPoint_calculatePrice(self):
+-    quotes = [
+-      {'top_ask': {'price': 121.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
+-      {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+-    ]
+-    """ ------------ Add the assertion below ------------ """
+-
+-  def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):
+-    quotes = [
+-      {'top_ask': {'price': 119.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
+-      {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+-    ]
+-    """ ------------ Add the assertion below ------------ """
+ 
++class ClientTest(unittest.TestCase):
++    def test_getDataPoint_calculatePrice(self):
++        quotes = [
++            {'top_ask': {'price': 121.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453',
++             'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
++            {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453',
++             'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
++        ]
++        """ ------------ Add the assertion below ------------ """
++        for quote in quotes:
++            self.assertEqual(getDataPoint(quote), [quote['stock'], quote['top_bid']['price'], quote['top_ask']['price'],
++                                                   quote['top_bid']['price'] + quote['top_ask']['price'] / 2])
+ 
+-  """ ------------ Add more unit tests ------------ """
++    def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):
++        quotes = [
++            {'top_ask': {'price': 119.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453',
++             'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
++            {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453',
++             'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
++        ]
++        """ ------------ Add the assertion below ------------ """
++        for quote in quotes:
++            self.assertEqual(getDataPoint(quote), [quote['stock'], quote['top_bid']['price'], quote['top_ask']['price'],
++                                                   quote['top_bid']['price'] + quote['top_ask']['price'] / 2])
+ 
++    """ ------------ Add more unit tests ------------ """
+ 
+ 
+ if __name__ == '__main__':
+-- 
+2.30.2.windows.1
+
